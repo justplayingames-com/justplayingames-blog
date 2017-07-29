@@ -42,5 +42,11 @@ class BlogServiceProvider extends ServiceProvider
      */
     public function register()
     {
+        $this->app->router->group(
+            ['namespace' => 'JustPlayinGames\Blog\Http\Controllers\Web'], 
+            function($router) {
+                require (__DIR__ . '/../routes/web.php');
+            }
+        );
     }
 }
