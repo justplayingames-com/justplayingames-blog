@@ -1,6 +1,6 @@
 <?php
 
-namespace JustPlayinGames\Blog;
+namespace JustPlayinGames\Blog\Http\Controllers\Web;
 
 use Illuminate\Http\Request;
 use Illuminate\Routing\Controller;
@@ -24,6 +24,11 @@ class BlogPostController extends Controller
      */
     public function index()
     {
-        return view('blog');
+        $blog_posts = collect([]);
+
+        return view(
+            'justplayingames-blog::blog',
+            compact('blog_posts')
+        );
     }
 }

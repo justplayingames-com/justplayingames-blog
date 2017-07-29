@@ -1,5 +1,7 @@
+@extends(config('justplayingames-blog.layout'))
+
+@component(config('justplayingames-blog.components.index'))
 @foreach ($blog_posts as $blog_post)
-<div>
-<pre>{{ $blog_post->text}}</pre>
-</div>
+@include(config('justplayingames-blog.partials.blog-post'))
 @endforeach
+@endcomponent

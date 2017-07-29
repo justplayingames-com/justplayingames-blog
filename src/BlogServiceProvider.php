@@ -28,11 +28,13 @@ class BlogServiceProvider extends ServiceProvider
         ]);
 
         /* database */
+        $this->loadMigrationsFrom(__DIR__.'/../database/migrations');
+
         if (! class_exists('CreateBlogPostTable')) {
             $timestamp = date('Y_m_d_His', time());
 
             $this->publishes([
-                __DIR__.'/../database/migrations/create_blog_post_table.php.stub' => database_path("/migrations/{$timestamp}_create_blog_post_table.php"),
+                __DIR__.'/../database/migrations/create_blog_posts_table.php.stub' => database_path("/migrations/{$timestamp}_create_blog_post_table.php"),
             ], 'migrations');
         }
     }
