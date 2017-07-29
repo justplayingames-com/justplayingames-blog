@@ -44,6 +44,11 @@ class BlogServiceProvider extends ServiceProvider
      */
     public function register()
     {
+       /*
+        * Register service providers for the dependencies.
+        */
+        $this->app->register('Parsedown\Providers\ParsedownServiceProvider');
+
         $this->app->router->group(
             ['namespace' => 'JustPlayinGames\Blog\Http\Controllers\Web'], 
             function($router) {

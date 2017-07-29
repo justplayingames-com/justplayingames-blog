@@ -24,7 +24,9 @@ class BlogPostController extends Controller
      */
     public function index()
     {
-        $blog_posts = collect([]);
+        $class = config('justplayingames-blog.models.blog-post');
+
+        $blog_posts = $class::all();
 
         return view(
             'justplayingames-blog::blog',
