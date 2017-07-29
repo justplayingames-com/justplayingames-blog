@@ -1,0 +1,12 @@
+{
+    "name": "justplayingames/blog",
+    "description": "Blog package for justplayingames.com",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Just Playin",
+            "email": "jp@justplayingames.com"
+        }
+    ],
+    "require": {}
+}
