@@ -2,11 +2,20 @@
     "name": "justplayingames/blog",
     "description": "Blog package for justplayingames.com",
     "type": "library",
+    "keywords": ["blog"],
+    "license": "BSD 3-clause",
     "authors": [
         {
             "name": "Just Playin",
             "email": "jp@justplayingames.com"
         }
     ],
-    "require": {}
+    "require": {
+        "parsedown/laravel": "^0.0.3"
+    },
+    "autoload": {
+        "psr-4": {
+            "JustPlayinGames\\Blog\\": "src/"
+        }
+    }
 }
