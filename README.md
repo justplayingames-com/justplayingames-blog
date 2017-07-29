@@ -1,2 +1,2 @@
 # justplayingames-blog
-Blog component for justplayingames.com
+Blog package for justplayingames.com

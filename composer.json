@@ -2,7 +2,7 @@
     "name": "justplayingames/blog",
     "description": "Blog package for justplayingames.com",
     "type": "library",
-    "keywords": ["blog"],
+    "keywords": ["blog", "justplayingames", "laravel"],
     "license": "BSD 3-clause",
     "authors": [
         {
